@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harish Kumar B — Aspiring Full Stack Developer. Explore projects, skills, education, and contact details." />
+  <title>Harish Kumar B | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Harish Kumar home">HK<span>.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#education">Education</a><a href="#certifications">Certifications</a><a class="nav-cta" href="#contact">Let's Connect ↗</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Introduction and interactive scratch reveal">
+      <div class="hero-backdrop"><div class="grid-glow"></div><div class="tech-orbit"></div></div>
+      <div class="hero-media" aria-hidden="true">
+        <img id="underImage" src="assets/harish-reveal1.png" alt="">
+      </div>
+      <canvas class="scratch-canvas" id="scratchCanvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-copy">
+          <div class="eyebrow">Portfolio · 2026</div>
+          <h1><span class="accent">Harish<br>Kumar B</span></h1>
+          <p class="hero-role">Aspiring Full Stack Developer</p>
+          <p class="hero-desc">I build responsive web experiences and practical applications, combining clean frontend interfaces with growing backend expertise. Move your cursor across the hero to uncover another layer.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore My Work <span>↗</span></a>
+            <a class="btn btn-ghost" href="https://github.com/harishkumarb42" target="_blank" rel="noopener">View GitHub <span>↗</span></a>
+          </div>
+          <div class="hero-meta"><span>Vellore, India</span><span>B.Tech IT · 2024–Present</span><span class="status-dot">Open to opportunities</span></div>
+          <div class="hero-stack" aria-label="Core technologies"><span>JS</span><span>React</span><span>Node</span><span>UI/UX</span></div>
+        </div>
+      </div>
+      <div class="scratch-hint"><i>↗</i> Move / drag to reveal</div>
+      <div class="reveal-badge" id="revealBadge">HIDDEN LAYER · SCRATCH TO EXPLORE</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="section-kicker">01 / About</div>
+          <h2 class="section-title">Curious by nature.<br>Developer by choice.</h2>
+          <p class="section-lead">I'm Harish Kumar B, a B.Tech Information Technology student passionate about building modern, responsive, and user-friendly web applications. I enjoy turning ideas into useful digital experiences, learning new technologies, and improving my development skills through hands-on projects.</p>
+          <p class="section-lead">My current focus is strengthening my full-stack development skills across React, JavaScript, Node.js, Express, and databases, while continuing to explore UI/UX and practical application design.</p>
+        </div>
+        <div class="about-card">
+          <div class="stat">01<span style="color:#a5b0c1;font-size:1rem"> / Profile</span></div>
+          <p>Information Technology student building a foundation in full-stack web development through projects and continuous learning.</p>
+          <div class="stat-row">
+            <div class="stat-box"><div class="stat">02</div><p>Featured completed projects</p></div>
+            <div class="stat-box"><div class="stat">2024</div><p>B.Tech program started</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-kicker">02 / Toolkit</div>
+        <h2 class="section-title">Technologies I work with.</h2>
+        <p class="section-lead">A growing toolkit for creating responsive interfaces, building application logic, and managing development workflows.</p>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">UI</div><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript (ES6+) · React.js · Bootstrap</p></article>
+          <article class="skill-card"><div class="skill-icon">API</div><h3>Backend</h3><p>Node.js · Express.js · REST API fundamentals</p></article>
+          <article class="skill-card"><div class="skill-icon">DB</div><h3>Databases</h3><p>MySQL · MongoDB (learning)</p></article>
+          <article class="skill-card"><div class="skill-icon">DEV</div><h3>Tools</h3><p>Git · GitHub · VS Code · Netlify</p></article>
+          <article class="skill-card"><div class="skill-icon">UX</div><h3>Design</h3><p>Responsive design · UI/UX principles · Usability</p></article>
+          <article class="skill-card"><div class="skill-icon">JS</div><h3>Web interactions</h3><p>DOM manipulation · Local Storage · Interactive components</p></article>
+          <article class="skill-card"><div class="skill-icon">TEAM</div><h3>Professional skills</h3><p>Problem solving · Team collaboration · Communication</p></article>
+          <article class="skill-card"><div class="skill-icon">↗</div><h3>Work approach</h3><p>Adaptability · Time management · Continuous learning</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-kicker">03 / Selected work</div>
+        <h2 class="section-title">Projects built with purpose.</h2>
+        <p class="section-lead">A selection of completed web projects demonstrating responsive layouts, interactive interfaces, and practical application features.</p>
+        <div class="project-toolbar" role="group" aria-label="Project filters"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="frontend">Frontend</button><button class="filter-btn" data-filter="javascript">JavaScript</button><span class="toolbar-note">Interactive case studies</span></div>
+        <div class="projects-grid">
+          <article class="project" data-category="frontend javascript">
+            <div class="project-art project-image">
+             <img 
+                     src="assets/budget-tracker.png" 
+                     alt="Budget Tracker project dashboard"
+               >
+           </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Budget Tracker</h3><span class="project-number">PROJECT / 01</span></div>
+              <p>A responsive personal finance application to manage income, expenses, savings, and balances. Includes real-time calculations, a dashboard layout, and Local Storage to retain transaction data in the browser.</p>
+              <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Local Storage</span></div>
+              <div class="project-links"><a href="https://budget-flix.netlify.app/" target="_blank" rel="noopener">Live Website ↗</a><a href="https://github.com/harishkumarb42" target="_blank" rel="noopener">GitHub Profile ↗</a></div>
+            </div>
+          </article>
+          <article class="project" data-category="frontend">
+           <div class="project-art project-image">
+             <img 
+                     src="assets/travel.png" 
+                     alt="travel  project dashboard"
+               >
+           </div>
+            <div class="project-body">
+              <div class="project-top"><h3>Travel Website</h3><span class="project-number">PROJECT / 02</span></div>
+              <p>A fully responsive travel website featuring destination showcases, travel package sections, and interactive navigation. Built with mobile-first design principles and cross-browser compatibility in mind.</p>
+              <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span></div>
+              <div class="project-links"><a href="https://harishkumarb42.github.io/travelproject/" target="_blank" rel="noopener">Live Website ↗</a><a href="https://github.com/harishkumarb42" target="_blank" rel="noopener">GitHub Profile ↗</a></div>
+            </div>
+          </article>
+          <article class="project" data-category="frontend javascript">
+
+            <div class="project-art project-image">
+              <img 
+                  src="assets/ecommerce.png"  alt="E-Commerce website project"
+                >
+            </div>
+
+          <div class="project-body">
+
+           <div class="project-top">
+            <h3>E-Commerce Website</h3>
+            <span class="project-number">PROJECT / 02</span>
+            </div>
+
+            <p>
+             A responsive e-commerce web application designed for browsing
+            products, viewing product details, managing a shopping cart,
+            and providing a smooth user shopping experience across desktop
+            and mobile devices.
+           </p>
+     
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive UI</span>
+        </div>
+
+        <div class="project-links">
+            <a 
+                href="https://e-commerce-hari.netlify.app/"
+                target="_blank"
+                rel="noopener"
+            >
+                Live Website ↗
+            </a>
+
+            <a 
+                href="https://github.com/harishkumarb42"
+                target="_blank"
+                rel="noopener"
+            >
+                GitHub Profile ↗
+            </a>
+        </div>
+
+    </div>
+
+</article>
+<article class="project" data-category="frontend javascript">
+
+    <div class="project-art project-image">
+        <img 
+            src="assets/gpa-cal.png" 
+            alt="GPA Calculator project"
+        >
+    </div>
+
+    <div class="project-body">
+
+        <div class="project-top">
+            <h3>GPA Calculator</h3>
+            <span class="project-number">PROJECT / 03</span>
+        </div>
+
+        <p>
+            A simple and responsive GPA calculator that allows students
+            to enter subjects, credits, and grades to calculate their
+            semester GPA accurately with an easy-to-use interface.
+        </p>
+
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">GPA Logic</span>
+        </div>
+
+        <div class="project-links">
+            <a 
+                href="https://harishkumarb42.github.io/calc/"
+                target="_blank"
+                rel="noopener"
+            >
+                Live Website ↗
+            </a>
+
+            <a 
+                href="https://github.com/harishkumarb42"
+                target="_blank"
+                rel="noopener"
+            >
+                GitHub Profile ↗
+            </a>
+        </div>
+
+    </div>
+
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-kicker">04 / Education</div>
+        <h2 class="section-title">Learning and building.</h2>
+        <div class="timeline">
+          <article class="timeline-card">
+            <span class="timeline-date">2024 — PRESENT</span>
+            <h3>B.Tech in Information Technology</h3>
+            <p>Ganadipathy Tulsi's Jain Engineering College</p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-date">2026 — PRESENT</span>
+            <h3>Full Stack Development</h3>
+            <p>Entri Finacademy </p>
+          </article>
+          <article class="timeline-card">
+            <span class="timeline-date">2026 — PRESENT</span>
+            <h3>Finance & AI</h3>
+            <p>Self Learning</p> 
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-kicker">05 / Certifications</div>
+        <h2 class="section-title">Learning beyond the classroom.</h2>
+        <div class="timeline">
+          <article class="timeline-card"><span class="timeline-date">2026</span><h3>Full Stack Development — Frontend and Backend</h3><p>Entri · Frontend development with HTML, CSS, JavaScript, and React; backend development with Node.js, Express, and database integration.</p></article>
+          <article class="timeline-card"><span class="timeline-date">2026</span><h3>Microsoft Project Management Professional Certificate</h3><p>Coursera · Project planning, Agile methodologies, stakeholder management, and risk assessment.</p></article>
+         </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-kicker">06 / Contact</div>
+        <h2 class="section-title">Have an idea? Let's connect.</h2>
+        <p class="section-lead">Interested in discussing a project, collaboration, or opportunity? Send me a message or connect through my professional profiles.</p>
+        <div class="contact-wrap">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>I'm open to connecting with developers, teams, and people building useful digital products.</p>
+            <a class="contact-link" href="mailto:mrkinggodhari24@gmail.com"><span>EMAIL</span>mrkinggodhari24@gmail.com</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/harish-kumar-b-861024bh" target="_blank" rel="noopener"><span>LINKEDIN</span>Connect professionally ↗</a>
+            <a class="contact-link" href="https://github.com/harishkumarb42" target="_blank" rel="noopener"><span>GITHUB</span>Explore repositories ↗</a>
+            <div class="form-note">Location: Vellore, Tamil Nadu, India</div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Enter your name" required></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me what you'd like to discuss..." required></textarea></div>
+            <button class="btn btn-primary" type="submit">Prepare Email ↗</button>
+            <p class="form-note" id="formNote">This form opens your email application with the message filled in; it does not send data to a server.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> HARISH KUMAR B · BUILT WITH CARE</span><a href="#home">Back to top ↑</a></div></footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
